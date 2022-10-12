@@ -1,0 +1,22 @@
+body {
+  font-family: 'Silkscreen', cursive;
+    background-color: #DC26E6;
+    color: #000000;
+    text-align: center;
+   
+}
+h1, h2, h3, h4 {
+    text-align: center;
+    font-size: 40pt;
+}
+header {
+    font-family: 'Alkalami', serif;
+    text-align: center;
+}
+#hero{
+    color:aquamarine;
+    border: 1rem solid #C43221;
+    background-color: blue;
+    text-align: center;
+    padding:20px;
+}
