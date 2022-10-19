@@ -36,3 +36,16 @@ header {
 #gallery figure{
     text-align: center;
 }
+#lit{
+    border: 2px solid crimson;
+    margin-bottom: 2rem;
+}
+
+#lit div{
+    padding: 2rem;
+    max-width: 40rem;
+    margin: 0 auto;
+}
+#lit div p{
+    padding:0.3rem 0;
+}
