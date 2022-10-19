@@ -20,3 +20,19 @@ header {
     text-align: center;
     padding:20px;
 }
+#bio{
+    text-align: center;
+}
+#hobbies ul li:nth-child(even){
+    color:#C43221
+
+}
+#gallery{
+    border: 2px solid #000000;
+}
+#gallery img{
+    max-width: 100%;
+}
+#gallery figure{
+    text-align: center;
+}
