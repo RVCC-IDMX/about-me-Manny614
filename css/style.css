@@ -14,6 +14,8 @@ header {
     text-align: center;
 }
 #hero, footer{
+    
+    max-width: 100%;
     color:aquamarine;
     border: 1rem solid #C43221;
     background-color: blue;
@@ -50,6 +52,7 @@ header {
     padding:0.3rem 0;
 }
 #avideo{
+    max-width: 100%;
     border: 5px solid red;
     margin: auto;
     padding: 0;
