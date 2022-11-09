@@ -7,7 +7,7 @@ body {
 }
 h1, h2, h3, h4 {
     text-align: center;
-    font-size: 40pt;
+    font-size: 30pt;
 }
 header {
     font-family: 'Alkalami', serif;
@@ -21,6 +21,9 @@ header {
     background-color: blue;
     text-align: center;
     padding:20px;
+}
+#hero img {
+    max-width:100%;
 }
 #bio{
     text-align: center;
