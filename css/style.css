@@ -64,4 +64,42 @@ header {
 
 #Elements{
     display: grid;
+    
+    row-gap: .5em;
+    max-width: 600px;
+    margin: 2rem auto;
+}
+fieldset{
+    
+    border:2px solid #C43221;
+    margin-top: 1em;
+    margin-bottom: 1rem;
+    border-radius: 2rem;
+}
+legend{
+    background-color: violet;
+    color: darkblue;
+    padding: .5em;
+    max-width: 400px;
+    width: 50%;
+    justify-self: center;
+}
+#contact input, #contact textarea, #contact select, #contact button{
+    padding: .5em;
+    font-size: 1rem;
+}
+#contact ul{
+    list-style: none;
+    padding: 0px;
+}
+#contact li{
+    margin: 1rem;
+}
+#contact button{
+    background: blueviolet;
+    color: rgb(143, 255, 143);
+    border: 1px solid;
+    max-width: 400px;
+    width: 50%;
+    justify-self: center;
 }
