@@ -61,3 +61,7 @@ header {
     padding: 0;
    
 }
+
+#formElements{
+    display: grid;
+}
