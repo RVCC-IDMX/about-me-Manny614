@@ -119,6 +119,58 @@
     
     </iframe>
 </section>
+<section id="contact">
+
+<h2>Contact Us</h2>
+<div id="formElements">
+<form id="contactform" name="contactform">
+    <fieldset>
+<legend>Contact Form</legend>
+<!---Name-->
+<label for="name">Name (Required)</label>
+<input type="text" id="name" name="name">
+
+<!--email-->
+<label for="email">Email (Required)</label>
+<input type="email" id="email" name="email">   
+<!--phone-->
+<label for="phone">Phone(optional)</label>
+<input type="tel" id="phone" name="phone"> 
+
+
+<label for="phonetype">Phone type optional</label>
+<select id="phonetype" name="phonetype">
+    <option value="" selected>select phone type</option>
+    <option value="Mobile">Mobile</option>
+    <option value="Work">Work</option>
+    <option value="Home">Home</option>
+
+
+</select>
+<label for="message">message</label>
+<textarea id="message" name="message" rows="8"></textarea>
+
+<fieldset>
+    <legend>would you like a reply</legend>
+<ul>
+    <li>
+        <input type="radio" id="message-yes" name="reply">
+        <label for="message-yes">yes a reply would be nice</label></li>
+<li>
+    <input type="radio" id="message-no" name="reply" checked>
+    <label for="message-no"> no thanks</label></li>
+
+
+</ul>
+</fieldset>
+<button type="submit">send</button>
+</div>
+</fieldset>
+
+</form>
+
+</section>
+
 </main>
 <footer>©2022 Manuel Melgar</footer>
 </body>
