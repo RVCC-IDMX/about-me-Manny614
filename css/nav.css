@@ -62,8 +62,13 @@ text-decoration: none;
 display: inline-block;
 }
 
+.navbar-links a:hover,
+.navbar-links a:focus{
+color: black;
+background-color:lawngreen ;
+border-radius: 10px;
 
-
+}
 
 /* 
 media query for non-mobile nav bar
