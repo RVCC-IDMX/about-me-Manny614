@@ -18,6 +18,7 @@ header {
     max-width: 100%;
     color:aquamarine;
     border: 1rem solid #C43221;
+    border-radius: 2rem;
     background-color: blue;
     text-align: center;
     padding:20px;
@@ -28,12 +29,16 @@ header {
 #bio{
     text-align: center;
 }
-#hobbies ul li:nth-child(even){
-    color:#C43221
+#hobbies,#Passion ul:nth-child(even){
+    display: flex; 
+flex-direction: column; 
+align-items: center;
+    color:whitesmoke
 
 }
 #gallery{
     border: 2px solid #000000;
+    border-radius: 2rem;
 }
 #gallery img{
     max-width: 100%;
