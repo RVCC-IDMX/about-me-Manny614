@@ -41,6 +41,7 @@ main{
 }
 .logo h1{
     font-size: 1.2em;
+    padding: 1em;
 }
 /* navigation list */
 .navbar-links li{
