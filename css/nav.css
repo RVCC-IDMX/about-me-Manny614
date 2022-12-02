@@ -15,6 +15,7 @@ body{
 
 /* add some padding back to rest of page */
 main{
+    
     padding: 2vw;
 }
 
@@ -27,6 +28,7 @@ main{
     font-size: 1.5rem;
     margin-bottom: 1rem;
     padding: 1rem;
+   
 }
 
 
@@ -36,8 +38,8 @@ main{
     align-items: center;
 }
 .logo img{
-    height: 7vw;
-    width: 7vw;
+    height: 3em;
+    width: 3em;
 }
 .logo h1{
     font-size: 1.2em;
@@ -55,6 +57,7 @@ main{
  and then on hover
 */
 .navbar-links a{
+    
 color: aqua;
 background-color: midnightblue;
 font-size: 2rem;
@@ -63,6 +66,7 @@ letter-spacing: 2px;
 text-decoration: none;
 display: inline-block;
 }
+
 
 .navbar-links a:hover,
 .navbar-links a:focus{
