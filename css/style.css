@@ -57,20 +57,44 @@ header {
 #gallery figure{
     text-align: center;
 }
+@media screen and (min-width: 60em){
+  #figure{display: flex;
+grid-template-columns: 60px 60px;}
+#figcaption{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    margin-left: 1em;
+}
+figure img{
+    width: 100%;
+}
+}
+@media screen and (min-width: 100em){
+    #gallery{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    hr{
+        display:none ;
+    }
+    #gallery h3 {
+        grid-column: 1/-1;
+    }
+    figure{
+        display: block;
+    }
+}
 #lit{
     border: 2px solid crimson;
     margin-bottom: 2rem;
 }
-@media screen and (mid-width:60em){
-    figure{display: grid;
-    grid-template-columns: 2fr; }
-    figcaption{display: flex;
-    justify-content: center;
-align-items: center;}
-}
+
 #lit div{
-    padding: 2rem;
-    max-width: 40rem;
+   padding: 2em;
+    max-width: 100%;
+    columns: 20rem;
     margin: 0 auto;
 }
 #lit div p{
