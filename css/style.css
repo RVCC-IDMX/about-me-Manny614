@@ -9,6 +9,12 @@ h1, h2, h3, h4 {
     text-align: center;
     font-size: 30pt;
 }
+h2{
+   margin:.5em; 
+}
+h3{
+    margin: .5em;
+}
 header {
     font-family: 'Alkalami', serif;
     text-align: center;
@@ -28,19 +34,19 @@ header {
 }
 #bio{
     text-align: center;
+    color: azure;
 }
-#Passion{
-    font-size: larger;
-    color: cyan;
-}
-#hobbies,#Passion li:nth-child(even){
-    font-size: larger;
-    display: flex; 
-flex-direction: column; 
-align-items: center;
-    color:whitesmoke
 
+
+#hobbies{
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+    color: darkgreen;
 }
+  
+
+
 #gallery{
     border: 2px solid #000000;
     border-radius: 2rem;
@@ -55,7 +61,13 @@ align-items: center;
     border: 2px solid crimson;
     margin-bottom: 2rem;
 }
-
+@media screen and (mid-width:60em){
+    figure{display: grid;
+    grid-template-columns: 2fr; }
+    figcaption{display: flex;
+    justify-content: center;
+align-items: center;}
+}
 #lit div{
     padding: 2rem;
     max-width: 40rem;
