@@ -66,8 +66,8 @@ padding: 1rem 1.25rem;
 letter-spacing: 2px;
 text-decoration: none;
 display: inline-block;
-opacity: 0;
-transition: opacity 150ms ease-in-out ;
+/*opacity: 0;
+transition: opacity 150ms ease-in-out ;*/
 }
 
 
@@ -78,14 +78,20 @@ background-color:lawngreen ;
 border-radius: 10px;
 
 }
-.nav-toggle:checked~.navbar-links{
+.navbar-links {
+    transform: scale(1,0);
+    transform-origin: top center;
+    transition-duration:.5s;
+}
+.nav-toggle:checked ~ .navbar-links{
     transform: scale(1,1);
+    transition-duration:.5s;
 }
 
 .nav-toggle{
    display: none;
 }
-.nav-toggle:checked~.navbar-links a{
+.nav-toggle:checked ~ .navbar-links a{
     opacity: 1;
     transition: opacity 250ms ease-in-out 250ms;
 }
@@ -131,6 +137,7 @@ such that no text wraps
     header{
         display: grid;
         grid-template-columns: 1fr auto minmax() 1fr;
+        
     }
 
     .navbar-links {

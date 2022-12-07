@@ -19,6 +19,7 @@ h3{
 header {
     font-family: 'Alkalami', serif;
     text-align: center;
+    
 }
 #hero, footer{
     
@@ -57,9 +58,20 @@ header {
     align-items: center;
     color: mediumspringgreen;
 }
+
+#myself {
+    background-image: linear-gradient(navy, lightgreen);
+    margin-left: 100px;
+    margin-right: 100px;
+    
+}
   
 #myself img{
     max-width: 100%;
+    background-image: linear-gradient(navy, lightgreen);
+    background-color: white;
+    margin-top: 20px;
+    margin-left: 20px;
 }
 
 #gallery{
@@ -85,6 +97,10 @@ grid-template-columns: 2fr 1fr;}
 }
 figure img{
     width: 100%;
+}
+#myself{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 }
 @media screen and (min-width: 100em){
