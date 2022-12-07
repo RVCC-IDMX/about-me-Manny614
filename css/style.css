@@ -58,7 +58,9 @@ header {
     color: mediumspringgreen;
 }
   
-
+#myself img{
+    max-width: 100%;
+}
 
 #gallery{
     border: 2px solid #000000;
@@ -72,9 +74,9 @@ header {
 }
 
 @media screen and (min-width: 60em){
-  #figure{display: flex;
+  #gallery figure{display: flex;
 grid-template-columns: 2fr 1fr;}
-#figcaption{
+#gallery figcaption{
     display: flex;
     justify-content: center;
     align-items: center;
