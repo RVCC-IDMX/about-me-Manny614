@@ -34,7 +34,8 @@ header {
 }
 #bio{
    text-align: center;
-    
+   border: 3px solid #38dc0b;
+   border-radius: 2rem;
     color: azure;
 }
 #bio ul:nth-child(even){
@@ -48,6 +49,8 @@ header {
 }
 #hobbies{
     
+    border: 3px solid #103ba9;
+    border-radius: 2rem;
     display: flex; 
     flex-direction: column; 
     align-items: center;

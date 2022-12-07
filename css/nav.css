@@ -8,6 +8,7 @@ html {
  header is at top
 */
 body{
+
     box-sizing: border-box;
     padding: 0;
     margin: 0;
@@ -65,6 +66,8 @@ padding: 1rem 1.25rem;
 letter-spacing: 2px;
 text-decoration: none;
 display: inline-block;
+opacity: 0;
+transition: opacity 150ms ease-in-out ;
 }
 
 
@@ -75,6 +78,49 @@ background-color:lawngreen ;
 border-radius: 10px;
 
 }
+.nav-toggle:checked~.navbar-links{
+    transform: scale(1,1);
+}
+
+.nav-toggle{
+   display: none;
+}
+.nav-toggle:checked~.navbar-links a{
+    opacity: 1;
+    transition: opacity 250ms ease-in-out 250ms;
+}
+.nav-toggle-label{
+ position: absolute; 
+ top: 0;  
+ right: 0;
+ margin-right: 1em;
+ border: 1px solid red;
+ height: 4%;
+ display: grid;
+align-items: center;
+}
+.nav-toggle-label span,
+.nav-toggle-label span::before,
+.nav-toggle-label span:after{
+    
+    display: block;
+    background: lawngreen;
+    height: 2px;
+    width: 2em;
+    border-radius: 2px;
+    position: relative;
+}
+.nav-toggle-label span::before,
+.nav-toggle-label span:after{
+    content: '';
+    position: absolute;
+}
+.nav-toggle-label span::before{
+    bottom: 7px;
+}
+.nav-toggle-label span:after{
+    top: 7px;
+}
 
 /* 
 media query for non-mobile nav bar
@@ -82,11 +128,19 @@ min-width set to width of nav elements
 such that no text wraps 
 */
 @media screen and (min-width: 60rem){
+    header{
+        display: grid;
+        grid-template-columns: 1fr auto minmax() 1fr;
+    }
 
     .navbar-links {
-        display:flex;
+        transform: scale(1,0);
+        transform-origin: top;
+        transition:transform 400ms ease-in-out;
         flex-direction:row;
         justify-content: space-between;
+        all: unset;
+        
     }
     .navbar{
         flex-direction: row;
@@ -96,5 +150,11 @@ such that no text wraps
     .navbar ul{
         display: flex;
         justify-content: space-between;
+    }
+    .nav-toggle-label{
+        display: none;
+    }
+    .navbar-links a{
+        opacity: 1;
     }
 }
