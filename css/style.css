@@ -1,11 +1,12 @@
 body {
   font-family: 'Silkscreen', cursive;
-    background-color: #DC26E6;
-    color: #000000;
+    background-color: purple;
+   color: springgreen;
     text-align: center;
    
 }
 h1, h2, h3, h4 {
+    color: yellowgreen;
     text-align: center;
     font-size: 30pt;
 }
@@ -36,10 +37,10 @@ header {
    text-align: center;
    border: 3px solid #38dc0b;
    border-radius: 2rem;
-    color: azure;
+    color:white
 }
 #bio ul:nth-child(even){
-    color: black;
+    color: orange;
     padding: .5em;
 }
 #hobbies li:nth-child(even){
@@ -54,7 +55,7 @@ header {
     display: flex; 
     flex-direction: column; 
     align-items: center;
-    color: darkgreen;
+    color: mediumspringgreen;
 }
   
 
@@ -69,6 +70,7 @@ header {
 #gallery figure{
     text-align: center;
 }
+
 @media screen and (min-width: 60em){
   #figure{display: flex;
 grid-template-columns: 2fr 1fr;}
@@ -101,6 +103,7 @@ figure img{
 #lit{
     border: 2px solid crimson;
     margin-bottom: 2rem;
+    color: turquoise;
 }
 
 #lit div{
@@ -111,6 +114,14 @@ figure img{
 }
 #lit div p{
     padding:0.3rem 0;
+    clear: both;
+}
+#lit div p::first-letter{
+    color: darkblue;
+    border: 4px outset black;
+    font-size: 3em;
+    background-color: aqua;
+    padding: 1px;
 }
 #avideo{
     max-width: 100%;
