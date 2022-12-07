@@ -17,6 +17,7 @@ h3{
     margin: .5em;
 }
 header {
+    
     font-family: 'Alkalami', serif;
     text-align: center;
     
@@ -60,19 +61,65 @@ header {
 }
 
 #myself {
+    max-width: 100%;
     background-image: linear-gradient(navy, lightgreen);
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: 50px;
+    margin-right:500px;
+    color: #000000;
+    padding: 20px;
+    margin: 20px;
+    width: 20rem;
+    height: 20rem;
+   
     
 }
-  
+#myself figcaption{
+    align-items: center;
+}
+
 #myself img{
+    
+    border: #000000 .3em solid;
+   max-height: 100%;
     max-width: 100%;
     background-image: linear-gradient(navy, lightgreen);
     background-color: white;
     margin-top: 20px;
-    margin-left: 20px;
+   
+    
 }
+@media screen and (min-width: 60em){
+    #myself figure{display: flex;
+  grid-template-columns: 2fr 1fr;}
+  #myself figcaption{
+    border: #C43221 5px solid;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 2rem;
+      margin-left: 1em;
+  }
+  
+  hr{
+      display: block;
+  }
+  }
+  @media screen and (min-width: 100em){
+      #myself{
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+      }
+      hr{
+          display:none ;
+      }
+      #gallery h3 {
+          grid-column: 1/-1;
+      }
+      figure{
+          display: block;
+      }
+  }
+
 
 #gallery{
     border: 2px solid #000000;
@@ -95,12 +142,9 @@ grid-template-columns: 2fr 1fr;}
     font-size: 2rem;
     margin-left: 1em;
 }
-figure img{
-    width: 100%;
-}
-#myself{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+
+hr{
+    display: block;
 }
 }
 @media screen and (min-width: 100em){
