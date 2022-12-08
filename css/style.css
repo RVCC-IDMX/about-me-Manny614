@@ -59,6 +59,14 @@ header {
     align-items: center;
     color: mediumspringgreen;
 }
+#bioinfo p::first-letter{
+    color: darkblue;
+    border: 4px outset black;
+    font-size: 3em;
+    background-color: aqua;
+    padding: 1px;
+    margin: 1px;
+}
 
 #myself {
     max-width: 100%;
@@ -92,11 +100,13 @@ header {
     #myself figure{display: flex;
   grid-template-columns: 2fr 1fr;}
   #myself figcaption{
+    max-width: 100%;
+    max-height: 100%;
     border: #C43221 5px solid;
       display: flex;
-      justify-content: center;
+      justify-content: end;
       align-items: center;
-      font-size: 2rem;
+      font-size: 10px;
       margin-left: 1em;
   }
   
